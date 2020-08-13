@@ -35,13 +35,14 @@
 // setTimeout
 
 
- const fib = [1,2,3,4,5,13]
-for(var i = 0; i< fib.length; i++){
+//  const fib = [1,2,3,4,5,13]
+// for(var i = 0; i< fib.length; i++){
 
-(function(j){ setTimeout(function(){
-    console.log(`fib${j}, [${fib[j]}]`)
-},1500)})// мы замикаем setTimeout, 
+// (function(j){ setTimeout(function(){
+//     console.log(`fib${j}, [${fib[j]}]`)
+// },1500)})// мы замикаем setTimeout, 
 
-(i) //отправлем значение в фунуцию(замикание)
+// (i) //отправлем значение в фунуцию(замикание)
 
-}
+// }
+
