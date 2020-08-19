@@ -15,19 +15,21 @@ Cat.prototype.voice = function(){
 // cat.voice()
 
 
-function Person (){
+// function Person (){
 
-}
-Person.prototype.lags = 2
-Person.prototype.skin= 'white'
+// }
+// Person.prototype.lags = 2
+// Person.prototype.skin= 'white'
 
-const person = new Person()
-person.name='yevhenii'
+// const person = new Person()
+// person.name='yevhenii'
 
-console.log('skin' in person)
-console.log(person.skin)
+// console.log('skin' in person)
+// console.log(person.skin)
 
 
-console.log(Object.hasOwnProperty('name'))
-console.log(Object.hasOwnProperty('legs'))
+// console.log(Object.hasOwnProperty('name'))
+// console.log(Object.hasOwnProperty('legs'))
+
+
 

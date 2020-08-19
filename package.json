@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/yevheniimoskalenko/intervu/issues"
   },
-  "homepage": "https://github.com/yevheniimoskalenko/intervu#readme"
+  "homepage": "https://github.com/yevheniimoskalenko/intervu#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
 }
