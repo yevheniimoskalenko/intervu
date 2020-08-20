@@ -1,6 +1,6 @@
 // imediate Invoiked function Expression
 
-let result = []
+let result = [];
 // for(var i = 0; i < 5; i++){
 //          result.push(function(){
 //              console.log(i)
@@ -9,13 +9,13 @@ let result = []
 // result[3]()
 
 
-for(var i = 0; i < 5; i++){
-    (function(){
-        let j = i
-        result.push(function(){
-            console.log(j)
-        })
+for (var i = 0; i < 5; i++){
+  (function(){
+    let j = i;
+    result.push(function(){
+      console.log(j);
+    });
 
-    })()
+  })();
 }
-result[3]()
+result[ 3 ]();
