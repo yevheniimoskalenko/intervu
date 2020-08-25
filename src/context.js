@@ -1,8 +1,8 @@
-const person = {surname: 'Start',
-knows:function(what, name){ // принимаем контекст
-    console.log(`что он знает ${what} кто ${name} ${this.surname}`)  // выводим метод
+const person = { surname: 'Start',
+  knows:function(what, name){ // принимаем контекст
+    console.log(`что он знает ${what} кто ${name} ${this.surname}`);  // выводим метод
 
-}}
+  } };
 // person.knows('start','yevhneii') // вызиваем метод и передаем контекст
 
 
@@ -36,10 +36,10 @@ knows:function(what, name){ // принимаем контекст
 
 
 function Cat(color){
-this.color = color
-console.log(this);
-(()=>{
-    console.log(this)
-})()
+  this.color = color;
+  console.log(this);
+  (()=>{
+    console.log(this);
+  })();
 }
-Cat('red')
+Cat('red');
