@@ -25,18 +25,19 @@
 
 // ================================================================
 // Sum ALL the arrays!
-const arr = [1,2,3,4,'git',[5,6,[7]],8];
+// const arr = [1,2,3,4,'git',[5,6,[7]],8];
 
-function arraySum(arr) {
-  arr = arr.toString().split(','); //тут ми перетворюємо багатомірний масив в рядок і його потім переводимо в одномірний масив який із значеннями буде string
+// function arraySum(arr) {
+//   arr = arr.toString().split(','); //тут ми перетворюємо багатомірний масив в рядок і його потім переводимо в одномірний масив який із значеннями буде string
 
-  let sum = arr.reduce((sum, elem) => { // за допомогою raduce ми беремо масив і кожен елемент плюсуємо в акамулятор, якщо в нас з'являється, не чесло то ми присвоюємо 0 до акамулятора, а якщо у нас число то просто добавляємо до суми
-    return Number.isNaN(+elem) ? sum += 0 : sum += +elem;
-  },0);
-  return sum;
-  // sum ALL the things!
-}
-console.log(arraySum(arr));
+//   let sum = arr.reduce((sum, elem) => { // за допомогою raduce ми беремо масив і кожен елемент плюсуємо в акамулятор, якщо в нас з'являється, не чесло то ми присвоюємо 0 до акамулятора, а якщо у нас число то просто добавляємо до суми
+//     return Number.isNaN(+elem) ? sum += 0 : sum += +elem;
+//   },0);
+//   return sum;
+//   // sum ALL the things!
+// return arr.reduce((n, x) => n + (Array.isArray(x) ? arraySum(x) : isNaN(x) ? 0 : x), 0)
+// }
+// console.log(arraySum(arr));
 
 
 
