@@ -40,5 +40,79 @@
 // console.log(arraySum(arr));
 
 
+// Valid Parentheses
 
 
+// function validParentheses(parens){
+//   const open = ['(', '{', '[']; // створюємо масив з відкриваєчими дужками
+//   const close = [')', '}', ']'];//  створюємо масив з закриваєчими дужками
+
+//   const stack = []; //  коди будемо складати дужки
+//   parens =parens.split('') // отриманий рядок розбиваємо на масив
+//     .map(elem => { //отриманий кожен елемент масива
+//       if (open.includes(elem)){ // перевіряємо відкриті дужки чи є в нашому масиві
+//         stack.push(elem); // то добавляємо його в кінець stack
+//       } else { //якщо немає то тоді ми шукаємо його закриту дужку
+//         if (close.indexOf(elem) === open.indexOf(stack[ stack.length - 1 ])){ // в першому ми шукаємо закриваючу дужку, а в другому откриту дужку
+//           stack.pop(); // видаляємо із кінця
+//         } else {
+//           return false;
+//         }
+        
+//       }
+//     });
+//   console.log(stack);
+
+//   return stack.length === 0;
+
+
+// }
+
+// function validParentheses(parens){
+//   const open = ['(', '{', '[']; // створюємо масив з відкриваєчими дужками
+//   const close = [')', '}', ']'];//  створюємо масив з закриваєчими дужками
+
+//   let stack = 0; //  коди будемо складати дужки
+//   parens =parens.split('') // отриманий рядок розбиваємо на масив
+//     .map(elem => { //отриманий кожен елемент масива
+//       if (elem === '('){
+//         stack++;
+//       } else if (elem === ')'){
+//         stack--;
+//       }
+//       if (stack < 0) {
+//         return false;
+//       }
+//     });
+//   if (stack === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+//   // console.log(stack);
+
+//   // return stack.length === 0;
+// }
+// console.log(validParentheses('())'));
+
+// function spongeMeme(sentence) {
+//   let res = '';
+//   for (let i = 0; i < sentence.length; i++){
+//     if (i % 2){
+//       res += sentence[ i ].toLowerCase();
+//     } else {
+//       res += sentence[ i ].toUpperCase();
+//     }
+//   }
+//   return res;
+// }
+
+// const spongeMeme = sentence => 
+//   sentence.split('').map((letter, i) => 
+//     i % 2 ? letter.toLowerCase() : letter.toUpperCase()
+//   ).join('')
+
+function spongeMeme(sentence) {
+  return sentence.split('').map((v,i) => i % 2 ? v.toLowerCase(): v.toUpperCase()).join('');
+} 
+console.log(spongeMeme('stop Making spongebob Memes!'));
