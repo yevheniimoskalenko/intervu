@@ -112,7 +112,24 @@
 //     i % 2 ? letter.toLowerCase() : letter.toUpperCase()
 //   ).join('')
 
-function spongeMeme(sentence) {
-  return sentence.split('').map((v,i) => i % 2 ? v.toLowerCase(): v.toUpperCase()).join('');
-} 
-console.log(spongeMeme('stop Making spongebob Memes!'));
+// function spongeMeme(sentence) {
+//   return sentence.split('').map((v,i) => i % 2 ? v.toLowerCase(): v.toUpperCase()).join('');
+// } 
+// console.log(spongeMeme('stop Making spongebob Memes!'));
+
+// 45385593107843568
+
+// function fakeBin(x){
+
+//   let arr = x.split('').map(e => {
+//     if (5 > e){
+//       return 0;
+//     } else {
+//       return 1;
+//     }
+//   }).join('');
+
+//   return arr;
+// }
+// // 45385593107843568 01011110001100111
+// console.log(fakeBin('45385593107843568'));
