@@ -40,10 +40,16 @@ const item = [1,3,4,6,67];
 
 
 // створює навий масив і ключ 
-var arr = ['a', 'b', 'c'];
+// var arr = ['a', 'b', 'c'];
 // var eArr = arr.entries(); // створення 
 
-for (const [key, value] of arr.entries()) { // таким чином можимо створити ключ і значення, і так отримати його
-  console.log(value);
-  // console.log(eArr.next().value);
-}
+// for (const [key, value] of arr.entries()) { // таким чином можимо створити ключ і значення, і так отримати його
+// console.log(value);
+// console.log(eArr.next().value);
+// }
+// const arr = ['a', 'b', 'c'];
+// Array.prototype.toString = function (){
+//   console.log(1);
+// };
+// console.log(arr.toString);
+
